@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="cricketGame.css">
+    <!-- <style>
+        body{
+            text-align: center;
+            
+        } -->
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Cricket Game</h1>
+    <h2>Bat Ball Stump Game</h2>
+<button class="button" onclick="
+//This will generate random number between 0 and 3
+let randomNumber = Math.random() * 3;
+let computerChoice;
+if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Bat';
+}
+else if (randomNumber > 1 && randomNumber <= 2){
+    computerChoice = 'Ball';
+}
+else{
+    computerChoice = 'Stump';
+}
+// const computerChoiceMsg = `Computer Choice is ${computerChoice}`;
+let resultMsg;
+if (computerChoice === 'Ball') {
+   resultMsg = 'User Won.';
+}
+else if (computerChoice === 'Bat') {
+    resultMsg = 'Match Tie.';
+}
+else if (computerChoice === 'Stump') {
+  resultMsg = 'Computer has Won.';
+}
+alert(`You have choosen Bat. Computer Choice is ${computerChoice} and ${resultMsg}`);">Bat</button>
+<button class="button"
+onclick="
+randomNumber = Math.random() * 3;
+//This will generate random number between 0 and 3
+if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Bat';
+}
+else if (randomNumber > 1 && randomNumber <= 2){
+    computerChoice = 'Ball';
+}
+else{
+    computerChoice = 'Stump';
+}
+// const computerChoiceMsg = `Computer Choice is ${computerChoice}`;
+if (computerChoice === 'Ball') {
+   resultMsg = 'Match Tie.';
+}
+else if (computerChoice === 'Bat') {
+    resultMsg = 'Computer has Won.';
+}
+else if (computerChoice === 'Stump') {
+  resultMsg = 'User Won.';
+}
+alert(`You have choosen Ball. Computer Choice is ${computerChoice} and ${resultMsg}`);"
+>Ball</button>
+<button class="button" onclick="
+randomNumber = Math.random() * 3;
+//This will generate random number between 0 and 3
+if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Bat';
+}
+else if (randomNumber > 1 && randomNumber <= 2){
+    computerChoice = 'Ball';
+}
+else{
+    computerChoice = 'Stump';
+}
+// const computerChoiceMsg = `Computer Choice is ${computerChoice}`;
+if (computerChoice === 'Ball') {
+   resultMsg = 'Computer has Won.';
+}
+else if (computerChoice === 'Bat') {
+    resultMsg = 'User Won';
+}
+else if (computerChoice === 'Stump') {
+  resultMsg = 'Match Tie.';
+}
+alert(`You have choosen Stump. Computer Choice is ${computerChoice} and ${resultMsg}`);">Stump</button>
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>
